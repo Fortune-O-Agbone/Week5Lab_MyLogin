@@ -14,8 +14,14 @@
     <body>
         <h1>Home Page</h1>
         
-        Hello ${username}<br><br>
+        <p>Hello ${username}</p>
         
-        <a href="login">Log out</a>
+        <!--
+        The logout button will make a request to the login servlet
+        the query string (?) contains one parameter called logout
+        this parameter does not have a value, so it will be sent as blank string
+        if the logout parameter does not exist, it will be considered null
+        -->
+        <a href="login?logout">Log out</a>
     </body>
 </html>
